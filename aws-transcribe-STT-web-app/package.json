@@ -1,0 +1,48 @@
+{
+  "name": "aws-transcribe-stt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "buildDev": "webpack --mode development",
+    "start": "webpack serve --mode development",
+    "lint": "eslint . --ext=js --fix",
+    "watchLint": "esw . --ext js --fix  --color -w",
+    "cssLint": "npx stylelint \"**/*.css\"",
+    "watchCssLint": "chokidar '**/*.css' -c \"css-lint.sh\"",
+    "htmlLint": "npx htmlhint \"**/*.html\"",
+    "watchHtmlLint": "chokidar '**/*.html' -c \"html-lint.sh\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Troy Collinsworth",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-polly": "^3.316.0",
+    "@aws-sdk/client-transcribe-streaming": "^3.316.0",
+    "buffer": "^6.0.3",
+    "microphone-stream": "^6.0.1"
+  },
+  "devDependencies": {
+    "chokidar": "^3.5.3",
+    "chokidar-cli": "^3.0.0",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.7.3",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-watch": "^8.0.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.1",
+    "htmlhint": "^1.1.4",
+    "ignore-styles": "^5.0.1",
+    "node-polyfill-webpack-plugin": "^2.0.1",
+    "style-loader": "^3.3.2",
+    "stylelint": "^15.5.0",
+    "stylelint-config-standard": "^33.0.0",
+    "webpack": "^5.80.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.13.3"
+  }
+}

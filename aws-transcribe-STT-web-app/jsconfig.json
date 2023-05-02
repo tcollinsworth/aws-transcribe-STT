@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    // "target": "ES6",
+    "allowSyntheticDefaultImports": true,
+    "checkJs": true,
+    "baseUrl": "./",
+    "paths": {
+      "Util/*": ["src/util/*"]
+    }
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}

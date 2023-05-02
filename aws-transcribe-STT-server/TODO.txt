@@ -1,0 +1,9 @@
+setup web client to call server to get creds
+
+create git project and push
+
+setup on server
+create certs
+update ALB
+
+test on server
